@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>无标题文档</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			html,body{
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			/*//水平方向的排列*/
+			/*#box{
+				width: 100%;
+				height: 100%;
+				background: whitesmoke;
+				display: flex;
+				flex-direction: row;
+			}
+			
+			
+			#div1{
+				width: 100px;
+				background: blue;
+			}
+			
+			#div2{
+				flex: 1;
+				background: yellow;
+			}
+			
+			#div3{
+				width: 100px;
+				background: red;
+			}*/
+			
+			/*//竖直方向排列的*/
+			#box{
+				width: 100%;
+				height: 100%;
+				background: whitesmoke;
+				display: flex;
+				flex-direction:column;
+			}
+			
+			
+			#div1{
+				height: 80px;
+				background: blue;
+			}
+			
+			#div2{
+				flex: 1;
+				background: yellow;
+				display: flex;
+			}
+			
+			#left,#right{
+				width: 100px;
+				background: powderblue;
+			}
+			#center{
+				flex: 1;
+				background: green;
+				overflow: auto;
+			}
+			
+			#center li{
+				list-style: none;
+				width: 33.333333333%;
+				height: 200px;
+				float: left;
+				background: yellow;
+				border: 1px solid black;
+				box-sizing: border-box;
+			}
+			
+			#div3{
+				height: 80px;
+				background: red;
+			}
+			
+			
+			@media only screen and (max-width: 700px) {
+				
+				#left,#right{
+					display: none;
+				}
+				#center li{
+					width: 50%;
+				}
+			}
+			
+			@media only screen and (max-width:480px){
+				#center li{
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box">
+			<div id="div1">header</div>
+			<div id="div2">
+				<div id="left">
+					left
+				</div>
+				<div id="center">
+					<ul>
+						<li>1111</li>
+						<li>2222</li>
+						<li>3333</li>
+						<li>4444</li>
+						<li>5555</li>
+						<li>6666</li>
+					</ul>
+				</div>
+				<div id="right">
+					right
+				</div>
+			</div>
+			<div id="div3">footer</div>
+		</div>
+	</body>
+
+</html>
